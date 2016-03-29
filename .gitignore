@@ -19,3 +19,4 @@ test/last-shot
 /coverage
 /failures
 /apidocs
+dist/

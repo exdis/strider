@@ -122,6 +122,7 @@
     "strider-simple-runner": "exdis/strider-simple-runner",
     "strider-slack": "^2.0.0",
     "strider-ssh-deploy": "^1.0.0",
+    "strider-webhooks": "exdis/strider-webhooks",
     "superagent": "^1.2.0",
     "swig": "^0.14.0",
     "thirty-two": "0.0.2",
@@ -150,7 +151,6 @@
     "node-mocks-http": "^1.2.4",
     "should": "^2.1.0",
     "sinon": "^1.10.3",
-    "strider-webhooks": "exdis/strider-webhooks",
     "watchify": "^3.4.0",
     "wd": "^0.3.8"
   }

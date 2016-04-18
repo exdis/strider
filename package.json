@@ -150,6 +150,7 @@
     "node-mocks-http": "^1.2.4",
     "should": "^2.1.0",
     "sinon": "^1.10.3",
+    "strider-webhooks": "exdis/strider-webhooks",
     "watchify": "^3.4.0",
     "wd": "^0.3.8"
   }

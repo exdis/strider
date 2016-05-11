@@ -2,6 +2,7 @@
 
 var $ = require('jquery');
 var textDuration = require('../utils/text-duration');
+var moment = require('moment');
 
 module.exports = function () {
   return {
@@ -25,7 +26,7 @@ module.exports = function () {
         date = new Date(attrs.datetime);
         $(element).tooltip({title: date.toLocaleString()});
       }
-      
+
       if ('undefined' !== typeof attrs.duration) {
         attrs.$observe('duration', function () {
           textDuration(attrs.duration, element);
@@ -36,13 +37,8 @@ module.exports = function () {
       attrs.$observe('datetime', function () {
         date = new Date(attrs.datetime);
         $(element).tooltip({title: date.toLocaleString()});
-        $(element).text($.timeago(date));
+        $(element).text(moment(date).format('DD.MM.YYYY HH:mm'));
       })
-      // TODO: use moment.js
-      $(element).text($.timeago(date));
-      setTimeout(function () {
-        $(element).timeago();
-      }, 0);
     }
   };
 };
